@@ -1,0 +1,299 @@
+#include "libft.h"
+#include <stdio.h>
+// #include <libc.h>
+#include <stdlib.h>
+#include <strings.h>
+#include <ctype.h>
+
+// void toup(unsigned int i, char *c)
+// {
+//     (void)i;
+//     if (*c >= 'a' && *c <= 'z')
+//       *c = *c - 32;
+// }
+
+// void tolow(unsigned int i, char *c)
+// {
+//     (void)i;
+//     if (*c >= 'A' && *c <= 'Z')
+//       *c = *c + 32;
+// }
+
+void add_content(void *lst)
+{
+	((t_list *)lst)->content = "test";
+}
+
+int main()
+{
+  // ==> ISALPHA TEST
+  // char c = 'e';
+  // printf("ft --> %d\n\n", ft_isalpha(NULL));
+  // printf("or --> %d", isalpha(NULL));
+
+  // ==> ISDIGIT TEST
+    // printf("ft --> %d\n\n", ft_isdigit(52));
+    // printf("or --> %d", isdigit(52));
+
+    // ==> ISALNUM test
+    // printf("ft --> %d\n\n", ft_isalnum('e'));
+    // printf("or --> %d", isalnum('e'));
+
+    // ==> ISASCII TEST
+    // printf("ft --> %d\n\n", ft_isascii('~'));
+    // printf("or --> %d", isascii('~'));
+
+    // ==> ISPRINT TEST
+    // printf("ft --> %d\n\n", ft_isprint('0'));
+    // printf("or --> %d", isprint('0'));
+
+    // ==> STRLEN TEST
+    // char str[] = "Hello World!";
+    // printf("ft --> %lu\n\n", ft_strlen(str));
+    // printf("or --> %lu", strlen(str));
+
+  // ==> MEMSET + BZERO TESTS
+//   char str[] = "Hello World";
+//   int x = 10;
+//   ft_bzero(str, -1);
+//   ft_memset(str, 'x', 4);
+    // printf("ft memset --> %s\n\n", ft_memset(str, 'x', -1));
+    // #undef memset
+    // printf("or memset --> %s", memset(str, 'x', 3));
+    // printf("ft bzero --> %s", str); 
+    // #undef bzero
+    // bzero(str, -1);
+    // printf("or bzero --> %s", str);
+
+  // ==> MEMCPY TEST
+//   char str1[] = "Hello World!!!";
+//   char str2[5];
+//   #undef memcpy
+//   printf("ft --> %s\n\n", ft_memcpy(str2, str1, 4));
+//   printf("or --> %s", memcpy(str2, str1, 4));
+
+  // ==> STRLCPY TEST
+  // char src[] = "Hello";
+  // char dst[100];
+
+  // printf("ft --> size => %lu\n", ft_strlcpy(dst, src, 100));
+  // printf("ft --> destination => %s\n\n", dst);
+  // printf("or --> size => %lu\n", strlcpy(dst, src, 100));
+  // printf("or --> destination => %s", dst);
+
+  // ==> STRLCAT TEST
+  // #undef strlcat
+  // char src[] = "ahadout";
+  // char dst[8] = "mohamed";
+  // printf("size => %lu\n", ft_strlcat(dst, src, 8));
+  // printf("destination => %s", dst);
+  
+
+  // ==> TOUPPER  & TOLOWER TEST
+  // printf("to upper => %c", ft_toupper(98));
+  // printf("to upper => %c", ft_tolower('1'));
+
+  // ==> STRCHR && STRRCHR TEST
+  // char str[] = "Heellfo World";
+  // printf("str => %s", ft_strchr(str, '\0'));
+  // printf("str => %s", ft_strrchr(str, (101 + 257)));
+
+  // ==> STRNCMP TEST
+  // char str1[] = "Heello World!";
+  // char str2[] = "Hello World!";
+  // printf("ft --> cmp => %d\n", ft_strncmp(str1, str2, 5));
+  // printf("origin --> cmp => %d", strncmp(str1, str2, 5));
+
+  // ==> MEMCHR TEST
+  // char str[] = {'a','b','\0'};
+  // printf("ft --> %s\n\n", ft_memchr(str, 'a', 4));
+  // printf("or --> %s\n\n", memchr(str, 'a', 4));
+
+  // ==> MEMCMP TEST
+  // int str1[] = {1, 2, 9};
+  // int str2[] = {1, 2, 3};
+  // printf("ft --> %d\n\n", ft_memcmp(str1, str2, 12));
+  // printf("origin --> %d", memcmp(str1, str2, 12));
+
+  // ==> STRNSTR TEST
+  // char str1[] = "Hello med :) World!!!";
+  // char str2[] = "";
+  // printf("ft --> %s\n\n", ft_strnstr(str1, str2, 5));
+  // printf("or --> %s", strnstr(str1, str2, 5));
+
+  // ==> ATOI TEST
+  // char str[] = "123456";
+  // printf("ft --> %d\n\n", ft_atoi(str));
+  // printf("or --> %d\n\n", atoi(str));
+
+  // ==> CALLOC TEST
+  // void *pcalloc;
+  // pcalloc = ft_calloc(5, 4);
+  // int *ppcalloc = (int *)pcalloc;
+  // int i = 0;
+  // while (i < 6 - 1)
+  // {
+  //   ppcalloc[i] = 5;
+  //   i+=1;
+  // }
+  // // ppcalloc[i] = '\0';
+  // i = 0;
+  // while(i < 6 - 1)
+  // {
+  //   printf("calloc => %d\n", ppcalloc[i]);
+  //   i++;
+  // }
+  // free(pcalloc);
+  // void	*p1;
+	// void	*p2;
+	// void	*p3;
+
+	// p1 = ft_calloc(5, 5);
+	// p2 = ft_calloc(5, 0);
+	// p3 = ft_calloc(0, 0);
+
+	// printf("count = 0: %p\n", p1);
+	// printf("size = 0:  %p\n", p2);
+	// printf("both = 0:  %p\n", p3);
+
+	// // free(p1);
+	// free(p2);
+	// free(p3);
+	// return (0);
+
+  // ==> STRDUP TEEST
+  // char str1[] = "195478";
+  // char *pstr2;
+  // char *pstr1;
+  // pstr1 = strdup(str1);
+  // pstr2 = ft_strdup(str1);
+  // printf("ft --> %s\n\n", pstr2);
+  // printf("or --> %s", pstr1);
+
+  // ==> MEMMOVE TEST
+  // char src[] = "Hello Mohamed!";
+  // char *dst = src + 2;
+  // printf("ft --> %s\n\n", ft_memmove(dst, src, 0));
+
+  // char src2[] = "Hello Mohamed!";
+  // char *dst2 = src2 + 2;
+  // printf("or --> %s", memmove(dst2, src2, 0));
+
+  // ==> SUBSTR TEST
+  // char str[] = "NULL";
+  // char *substr = ft_substr(str, 1, 2);
+  // printf("ft --> %s", substr);
+  // free(substr);
+
+  // ==> STRJOIN TEST
+  // char str1[] = "Hello";
+  // char str2[] = "World";
+  // printf("ft --> %s", ft_strjoin(str1, str2));
+
+  // ==> STRTRIM TEST
+  // char str1[] = "zxHello zWorld!zx";
+  // char set[] = "zyx";
+  // printf("--> %s\n\n", ft_strtrim(str1, set));
+
+  // ==> ITOA TEST
+  // int n = 0;
+  // printf("--> %s", ft_itoa(n));
+
+  // ==> ft_strmapi TEST
+  // char *result = ft_strmapi("hello world", top);
+  // printf("%s\n", result);
+  // free(result);
+  // return (0);
+
+	// ==> ft_striteri TEST
+	//   char str[] = "Hello!";
+	//   ft_striteri(str, toup);
+	//   printf("--> %s", str);
+
+	// ==> ft_putchar_fd TEST
+	// ft_putchar_fd('8', 1);
+
+	// ==> ft_putstr_fd TEST
+	// char str[] = "Hello World!";
+	// ft_putstr_fd(str, 1);
+
+	// ==> ft_putendl_fd TEST
+	// char str[] = "Hello World";
+	// ft_putendl_fd(str, 1);
+	// printf("?");
+
+	// ==> ft_punbr_fd
+	// int n = 659;
+	// ft_putstr_fd(n, 1);
+
+	// ==> ft_lstnew
+	// t_list *newNode;
+	// char test[] = "test";
+	// newNode = ft_lstnew(test);
+
+	// printf("--> Content: %s\n\n", (char *)newNode->content);
+	// printf("--> Next: %p", newNode->next);
+
+	// ==> ft_lstadd_front
+	// t_list *node = NULL;
+	// ft_lstadd_front(&node, ft_lstnew("front"));
+	// ft_lstadd_front(&node, ft_lstnew("front2"));
+
+	// 	printf("node: %s\n", (char *)node->content);
+
+	// ==> ft_lstsize
+	// t_list *node1, *node2, *node3;
+	// node1 = malloc(sizeof(t_list));
+	// node1->content = "Node 1";
+	// node1->next = NULL;
+	// node2 = malloc(sizeof(t_list));
+	// node2->content = "Node 2";
+	// node2->next = node1;
+	// node3 = malloc(sizeof(t_list));
+	// node3->content = "Node 3";
+	// node3->next = node2;
+
+	// t_list *a = ft_lstnew("A");
+	// t_list *b = ft_lstnew("B");
+	// t_list *c = ft_lstnew("C");
+	// c->next = b;
+	// b->next = a;
+	// a->next = NULL;
+	// printf("%d\n", ft_lstsize(node3));
+
+	// ==> ft_lstlast TEST
+	// t_list *a = ft_lstnew("A");
+	// t_list *b = ft_lstnew("B");
+	// t_list *c = ft_lstnew("C");
+	// c->next = b;
+	// b->next = a;
+	// a->next = NULL;
+	// t_list *last = ft_lstlast(c);
+	// printf("%s\n", (char *)last->content);
+
+	// ==> ft_lstadd_back TEST
+	// t_list *a = ft_lstnew("A");
+	// t_list *b = ft_lstnew("B");
+	// t_list *c = ft_lstnew("C");
+	// c->next = b;
+	// b->next = a;
+	// a->next = NULL;
+	// t_list *r;
+	// r = ft_lstnew("R");
+	// ft_lstadd_back(&c, r);
+	// t_list *last = ft_lstlast(c);
+	// printf("%s", (char *)last->content);
+
+	// ==> ft_lstiter TEST
+	// t_list *a = ft_lstnew("A");
+	// t_list *b = ft_lstnew("B");
+	// t_list *c = ft_lstnew("C");
+	// c->next = b;
+	// b->next = a;
+	// a->next = NULL;
+	// ft_lstiter(c, add_content);
+	// printf("%s", (char *)c->content);
+
+	// ==> ft_lstmap TEST
+	
+}
